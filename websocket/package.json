@@ -1,0 +1,9 @@
+{
+  "name": "socket",
+  "version": "0.0.1",
+  "description": "myproject",
+  "dependencies": {},
+  "devDependencies": {
+    "ws": "^2.2.3"
+  }
+}

@@ -1,0 +1,1 @@
+1.在该项目文件夹，index.js 文件所在目录，打开 git bash，运行 node app.js
