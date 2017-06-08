@@ -1,0 +1,12 @@
+
+/*导航部分*/
+.navbar-inverse a {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
+    color: #9d9d9d
+}   
+.navbar-inverse a:hover {
+    cursor: pointer;
+}
+    

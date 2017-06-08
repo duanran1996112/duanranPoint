@@ -1,0 +1,13 @@
+extends ../layout.jade
+
+block content
+  .row.clear-fix
+    each item in studentMessage
+      div.col-md-3.pull-left
+        a(href="/student/#{item._id}")
+          img.img-thumbnail(width="100%" src="#{item.pic}", alt="学生照片")
+        a(href="/student/#{item._id}")
+          p.text-center #{item.name}
+        a(href="/student/#{item._id}")
+          p.text-center #{item.studyId}
+

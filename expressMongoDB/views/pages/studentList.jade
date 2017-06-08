@@ -1,0 +1,40 @@
+extends ../layout.jade
+
+block content
+  .row.text-center
+    table.table.table-striped
+      thead
+        tr
+          th.text-center 姓名
+          th.text-center 英文名
+          th.text-center 学号
+          th.text-center 年龄
+          th.text-center 性别
+          th.text-center 身高
+          th.text-center 体重
+          th.text-center 数学
+          th.text-center 语文
+          th.text-center 英语
+          // th 更新时间
+          th.text-center 查看
+          th.text-center 删除
+      tbody
+        each item in studentListMessage
+          tr
+            td #{item.name}
+            td #{item.englishName}
+            td #{item.studyId}
+            td #{item.age}
+            td #{item.sex}
+            td #{item.height}
+            td #{item.weight}
+            td #{item.math}
+            td #{item.chinese}
+            td #{item.english}
+            // td #{item.newDateTime}
+            td 
+              a(href="/student/#{item._id}") 查看详情
+            td 
+              a.removeMessage(id="#{item._id}") 删除
+  script(src="/js/jquery.js")
+  script(src="/js/remove.js")

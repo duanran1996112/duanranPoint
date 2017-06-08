@@ -1,0 +1,66 @@
+extends ../layout.jade
+
+block content
+  .row
+    .col-md-6.col-md-offset-3
+      .row
+        form.form-horizontal(action="/students/add" method="POST")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="name") 姓名
+            .input-group.col-md-9
+              .input-group-addon N
+              input.form-control(type="text" id="name" name="name" placeholder="name")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="englishName") 英文名
+            .input-group.col-md-9
+              .input-group-addon E
+              input.form-control(type="text" id="englishName" name="englishName" placeholder="englishName")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="studyId") 学号
+            .input-group.col-md-9
+              .input-group-addon S
+              input.form-control(type="text" id="studyId" name="studyId" placeholder="studyId")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="age") 年龄
+            .input-group.col-md-9
+              .input-group-addon A
+              input.form-control(type="text" id="age" name="age" placeholder="age")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="sex") 性别
+            #sex.input-group.col-md-9
+              .input-group-addon S
+              select.form-control(name="sex")
+                option(value="男") 男
+                option(value="女") 女
+          .form-group.has-warning
+            label.control-label.col-md-3(for="height") 身高
+            .input-group.col-md-9
+              .input-group-addon H
+              input.form-control(type="text" id="height" name="height" placeholder="height")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="weight") 体重
+            .input-group.col-md-9
+              .input-group-addon W
+              input.form-control(type="text" id="weight" name="weight" placeholder="weight")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="math") 数学
+            .input-group.col-md-9
+              .input-group-addon M
+              input.form-control(type="text" id="math" name="math" placeholder="math")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="chinese") 语文
+            .input-group.col-md-9
+              .input-group-addon C
+              input.form-control(type="text" id="chinese" name="chinese" placeholder="chinese")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="english") 英语
+            .input-group.col-md-9
+              .input-group-addon E
+              input.form-control(type="text" id="english" name="english" placeholder="english")
+          .form-group.has-warning
+            label.control-label.col-md-3(for="pic") 照片
+            .input-group.col-md-9
+              .input-group-addon P
+              input.form-control(type="text" id="pic" name="pic" placeholder="pic")
+          .form-group.has-warning
+            input.btn.btn-primary.col-xs-2.col-xs-offset-5(type="submit" value="提交")

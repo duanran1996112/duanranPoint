@@ -1,0 +1,63 @@
+extends ../layout.jade
+
+block content
+  .row
+    .h2.text-center 学生详情
+  .row
+    p.text-center
+      img.img-circle(src="#{studentLongMessage.pic}")
+  .row
+    p.text-center
+      span.lead 姓名:
+    p.text-center
+      span #{studentLongMessage.name}
+  .row
+    p.text-center
+      span.lead 英文名:
+    p.text-center
+      span #{studentLongMessage.englishName}
+  .row
+    p.text-center
+      span.lead 学号:
+    p.text-center
+      span #{studentLongMessage.studyId}
+  .row
+    p.text-center
+      span.lead 年龄:
+    p.text-center
+      span #{studentLongMessage.age}
+  .row
+    p.text-center
+      span.lead 性别:
+    p.text-center
+      span #{studentLongMessage.sex}
+  .row
+    p.text-center
+      span.lead 身高:
+    p.text-center
+      span #{studentLongMessage.height}
+  .row
+    p.text-center
+      span.lead 体重:
+    p.text-center
+      span #{studentLongMessage.weight}
+  .row
+    p.text-center
+      span.lead 数学:
+    p.text-center
+      span #{studentLongMessage.math}
+  .row
+    p.text-center
+      span.lead 语文:
+    p.text-center
+      span #{studentLongMessage.chinese}
+  .row
+    p.text-center
+      span.lead 英语:
+    p.text-center
+      span #{studentLongMessage.english}
+  .row
+    p.text-center
+      span.lead 更新时间:
+    p.text-center
+      span #{studentLongMessage.newDateTime}

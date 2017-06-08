@@ -1,0 +1,20 @@
+1.安装 MongoDB 数据库，默认安装到 C:Program Files
+
+2.(1).使用 cmd 进入，cd Program Files/MongoDB/Server/3.4 进入这个文件夹
+
+  (2).运行 .\bin\mongod --dbpath ''
+
+      ''处填写 该项目 data 文件夹的路径，如 C:\tencent-of-web\Express+MongoDB学籍管理系统\data
+
+3.(1).再次使用 cmd 进入，cd Program Files/MongoDB/Server/3.4 进入这个文件夹
+
+  (2).运行 .\bin\mongo
+
+  (3).运行 use duanran，使用 duanran 数据库
+
+4.在该项目文件夹，app.js 文件所在目录，打开 git bash，运行 nodemon app.js
+
+  安装 nodemon，npm install nodemon -g
+
+5.在谷歌浏览器输入 localhost:3000 即可开始操作，进入学生入口开始录入数据
+
